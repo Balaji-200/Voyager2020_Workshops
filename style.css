@@ -8,16 +8,80 @@ html,body{
     background-size: cover;
     z-index: -1;
 }
+#detail_p5,#detail_uk{
+    display: none;
+}
+#detail_app,#detail_p5,#detail_uk{
+    visibility: hidden;
+}
 #Carousel_slider.container-fluid{
     padding: 0;
 }
 #Sticky {
+    margin-top: 20px;
     flex-shrink: unset;
-  }
-  #dummy{
-      width: 100%;
-      height: 50vh;
   }
   #icons>span{
       padding: 10px;
   }
+  .but{
+      transition: 0.3s;
+      border: none;
+  }
+
+  #detail_app>.sub{
+      border: 1.2px;
+      border-style: solid;
+        border-radius: 0%;
+        background-color: inherit 0.8;
+        border-color: transparent;
+        transition: 0.5s;
+  }
+  #detail_app>.sub:hover{
+    color: black;
+    border-color:#A7C63C;
+    background-color:white;
+    transition: 0.5s;
+    text-shadow:  0 0 5px #A7C63C,
+                  0 0 10px #A7C63C,
+                  0 0 25px #A7C63C,
+                  0 0 35px #A7C63C,
+                  0 0 50px #A7C63C;
+    box-shadow: 0 0 5px  #A7C63C,
+                0 0 10px #A7C63C,
+                0 0 25px #A7C63C;
+  }
+  #detail_app>p{
+      font-size: 20px;
+      color: #A7C63C;
+      text-shadow: 0 0 2px #A7C63C,
+                   0 0 1px white;
+  }
+  #detail_p5>.sub{
+    border: 1.2px;
+    border-style: solid;
+      border-radius: 0%;
+      background-color: inherit 0.8;
+      border-color: transparent;
+      transition: 0.5s;
+}
+#detail_p5>.sub:hover{
+  color: black;
+  border-color: #EB265E;
+  background-color:white;
+  transition: 0.5s;
+  text-shadow:  0 0 5px  #EB265E,
+                0 0 10px #EB265E,
+                0 0 25px #EB265E,
+                0 0 35px #EB265E,
+                0 0 50px #EB265E;
+  box-shadow: 0 0 5px  #EB265E,
+              0 0 10px #EB265E,
+              0 0 25px #EB265E;
+}
+#detail_p5>p{
+    font-size: 20px;
+    color: #EB265E;
+    text-shadow: 0 0 2px #EB265E,
+                 0 0 1px white;
+}
