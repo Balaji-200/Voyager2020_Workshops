@@ -46,7 +46,7 @@
         </nav>
     </header>
     <div class="container-fluid">
-        <h2 class="display-4 text-light text-center">WORKSHOPS</h2>
+        <h2 id="head" class="display-4 text-light text-center">WORKSHOPS</h2>
     </div>
     <!-- Image slider (Carousel) -->
     <section class="container-fluid" id="Carousel_slider">
@@ -58,19 +58,19 @@
         </ul>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 h-100  img-fluid" src="https://www.mobiwebtech.com/wp-content/uploads/2016/12/android.png" alt="Android">
+                <img src="https://www.mobiwebtech.com/wp-content/uploads/2016/12/android.png" alt="Android" id="app_img" class="d-block w-100 h-100 img-fluid">
                 <div class="carousel-caption">
                     <button id="android" class="btn btn-outline-light btn-lg but" onmouseup="this.blur()">Details</button>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 h-100 img-fluid" src="https://miro.medium.com/max/2800/1*9Z9RyeDkgv7vsco1xw0oyQ.png" alt="p5">
+                <img id="p5_img" class="d-block w-100 h-100 img-fluid" src="https://miro.medium.com/max/2800/1*9Z9RyeDkgv7vsco1xw0oyQ.png" alt="p5">
                 <div class="carousel-caption">
                     <button id="p5" class="btn btn-outline-light btn-lg but" onmouseup="this.blur()">Details</button>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 h-100 img-fluid" src="https://miro.medium.com/max/2800/1*9Z9RyeDkgv7vsco1xw0oyQ.png" alt="unknown">
+                <img id="uk_img" class="d-block w-100 h-100 img-fluid" src="https://miro.medium.com/max/2800/1*9Z9RyeDkgv7vsco1xw0oyQ.png" alt="unknown">
                 <div class="carousel-caption">
                     <button id="uk" class="btn btn-outline-light btn-lg but" onmouseup="this.blur()">Details</button>
                 </div>
@@ -88,21 +88,21 @@
     </section>
     <section>
         <div id="detail_app" class="container-fluid text-center">
-            <h2 class="container-fluid display-3 text-center">Android app Development</h2>
+            <h2 class="container-fluid display-4 text-center">Android app Development</h2>
             <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptates possimus minima vitae numquam blanditiis et ipsa provident esse non. Deserunt deleniti earum rerum maiores. Sed labore similique velit aliquam?</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit corrupti eius qui nam nobis iste distinctio odio temporibus veniam a eos, nemo provident dicta tenetur minus ullam porro exercitationem.</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt dicta totam, cupiditate est laudantium adipisci? Inventore soluta eum, accusantium doloribus vel labore alias quae minima fugit eligendi, ducimus et.</p>
             <button class="btn btn-primary btn-lg sub" onmouseup="this.blur()">Register</button>
         </div>
         <div id="detail_p5" class="container-fluid text-center">
-            <h2 class="container-fluid display-3 text-center">Introduction to p5.js</h2>
+            <h2 class="container-fluid display-4 text-center">Introduction to p5.js</h2>
             <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptates possimus minima vitae numquam blanditiis et ipsa provident esse non. Deserunt deleniti earum rerum maiores. Sed labore similique velit aliquam?</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit corrupti eius qui nam nobis iste distinctio odio temporibus veniam a eos, nemo provident dicta tenetur minus ullam porro exercitationem.</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt dicta totam, cupiditate est laudantium adipisci? Inventore soluta eum, accusantium doloribus vel labore alias quae minima fugit eligendi, ducimus et.</p>
             <button class="btn btn-primary btn-lg sub" onmouseup="this.blur()">Register</button>
         </div>
         <div id="detail_uk" class="container-fluid text-center">
-            <h2 class="container-fluid display-3 text-center text-light">404 Not found</h2>
+            <h2 class="container-fluid display-4 text-center text-light">404 Not found</h2>
             <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptates possimus minima vitae numquam blanditiis et ipsa provident esse non. Deserunt deleniti earum rerum maiores. Sed labore similique velit aliquam?</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit corrupti eius qui nam nobis iste distinctio odio temporibus veniam a eos, nemo provident dicta tenetur minus ullam porro exercitationem.</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt dicta totam, cupiditate est laudantium adipisci? Inventore soluta eum, accusantium doloribus vel labore alias quae minima fugit eligendi, ducimus et.</p>
@@ -110,13 +110,15 @@
         </div>
     </section>
     <footer id="Sticky" class="py-4 bg-dark text-light">
-        <div id="icons" class="containe-fluid text-center">
-            <span><i class="fab fa-facebook fa-3x"></i></span>
-            <span><i class="fab fa-instagram fa-3x"></i></span>
-            <span><i class="fab fa-twitter fa-3x"></i></span>
+        <div id="icons" class="container-fluid text-center">
+            <span><i class="fab fa-twitter fa-2x"></i></span>
+            <span><i class="fab fa-facebook fa-2x"></i></span>
+            <span><i class="fab fa-instagram fa-2x"></i></span>
         </div>
         <div class="container-fluid text-center">
-            &copy; 2020 Copyright: Official IEEE_Vit Tech-web team.
+            <span>&copy; 2019-20 Copyright:</span><br>
+            <span>IEEE-VIT STUDENT BRANCH</span><br>
+            <span>CODE OF CONDUCT</span>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
