@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-backdrop="keyboard">
     <header>
         <nav class="navbar navbar-light navbar-expand-md bg-dark sticky-top">
             <div class="container-fluid">
@@ -60,19 +60,22 @@
             <div class="carousel-item active">
                 <img src="https://www.appindia.co.in/blog/wp-content/uploads/2019/02/Androids-app-development-company.png" alt="Android" id="app_img" class="d-block w-100 h-100 img-fluid">
                 <div class="carousel-caption">
-                    <button id="android" class="btn btn-outline-light btn-lg but" onmouseup="this.blur()">Details</button>
+                    <button id="android" class="btn btn-outline-light btn-lg but" onmouseup="this.blur()" data-toggle="modal" data-target="#and-app">Details</button>
+                    <button id="regi_app" class="btn btn-primary btn-lg sub" onmouseup="this.blur()">Register</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img id="p5_img" class="d-block w-100 h-100 img-fluid" src="./assets/1_OP9fKC7CRV9WOOtkWlJjZQ.jpeg" alt="p5">
                 <div class="carousel-caption">
-                    <button id="p5" class="btn btn-outline-light btn-lg but" onmouseup="this.blur()">Details</button>
+                    <button id="p5" class="btn btn-outline-light btn-lg but" onmouseup="this.blur()" data-toggle="modal" data-target="#intro-p5">Details</button>
+                    <button id="regi_p5" class="btn btn-primary btn-lg sub" onmouseup="this.blur()">Register</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img id="uk_img" class="d-block w-100 h-100 img-fluid" src="https://i.pinimg.com/originals/d8/31/ab/d831ab6f16f82c542868bbd8b708c828.jpg" alt="unknown">
                 <div class="carousel-caption">
-                    <button id="uk" class="btn btn-outline-light btn-lg but" onmouseup="this.blur()">Details</button>
+                    <button id="uk" class="btn btn-outline-light btn-lg but" onmouseup="this.blur()" data-toggle="modal" data-target="#arduino">Details</button>
+                    <button id="regi_uk" class="btn btn-primary btn-lg sub" onmouseup="this.blur()">Register</button>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
@@ -86,29 +89,69 @@
         </div>
     </div>
     </section>
-    <section>
+  <!-- Modal -->
+  <div class="modal fade" id="and-app" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+          <div id="det-app" class="card container-fluid text-center" style="width: 50vw;">
+            <img src="https://i.ytimg.com/vi/qqzy1EEid0E/maxresdefault.jpg" alt="app for beginners" class="card-img-top img-fluid">
+            <div class="card-body">
+                <h2 id="app-cap" class="container-fluid textcenter display-4">Android app Development</h2>
+                <p class="text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ab? Nobis qui debitis repudiandae id velit aliquid officiis inventore deleniti voluptatum iste, magnam iusto fugit esse ea atque assumenda repellat.
+                </p>
+            </div>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="intro-p5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+          <div id="det-p5" class="card container-fluid text-center" style="width: 50vw;">
+            <img src="https://miro.medium.com/max/2800/1*9Z9RyeDkgv7vsco1xw0oyQ.png" alt="p5" class="card-img-top img-fluid">
+            <div class="card-body">
+                <h2 id="p5-cap" class="container-fluid textcenter display-4">Introduction to p5</h2>
+                <p class="text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ab? Nobis qui debitis repudiandae id velit aliquid officiis inventore deleniti voluptatum iste, magnam iusto fugit esse ea atque assumenda repellat.
+                </p>
+            </div>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="arduino" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+          <div id="det-ard" class="card container-fluid text-center" style="width: 50vw;">
+            <img src="https://www.circuitspecialists.com/content/240070/arduino_uno_r3-0.jpg" alt="app for beginners" class="card-img-top img-fluid">
+            <div class="card-body">
+                <h2 id="ard-cap" class="container-fluid textcenter display-4">Arduino</h2>
+                <p class="text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ab? Nobis qui debitis repudiandae id velit aliquid officiis inventore deleniti voluptatum iste, magnam iusto fugit esse ea atque assumenda repellat.
+                </p>
+            </div>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+    </div>
+  </div>
+    <!-- <section>
         <div id="detail_app" class="container-fluid text-center">
             <h2 class="container-fluid display-4 text-center">Android app Development</h2>
             <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptates possimus minima vitae numquam blanditiis et ipsa provident esse non. Deserunt deleniti earum rerum maiores. Sed labore similique velit aliquam?</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit corrupti eius qui nam nobis iste distinctio odio temporibus veniam a eos, nemo provident dicta tenetur minus ullam porro exercitationem.</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt dicta totam, cupiditate est laudantium adipisci? Inventore soluta eum, accusantium doloribus vel labore alias quae minima fugit eligendi, ducimus et.</p>
-            <button class="btn btn-primary btn-lg sub" onmouseup="this.blur()">Register</button>
         </div>
         <div id="detail_p5" class="container-fluid text-center">
             <h2 class="container-fluid display-4 text-center">Introduction to p5.js</h2>
             <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptates possimus minima vitae numquam blanditiis et ipsa provident esse non. Deserunt deleniti earum rerum maiores. Sed labore similique velit aliquam?</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit corrupti eius qui nam nobis iste distinctio odio temporibus veniam a eos, nemo provident dicta tenetur minus ullam porro exercitationem.</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt dicta totam, cupiditate est laudantium adipisci? Inventore soluta eum, accusantium doloribus vel labore alias quae minima fugit eligendi, ducimus et.</p>
-            <button class="btn btn-primary btn-lg sub" onmouseup="this.blur()">Register</button>
         </div>
         <div id="detail_uk" class="container-fluid text-center">
             <h2 class="container-fluid display-4 text-center text-light">404 Not found</h2>
             <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptates possimus minima vitae numquam blanditiis et ipsa provident esse non. Deserunt deleniti earum rerum maiores. Sed labore similique velit aliquam?</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit corrupti eius qui nam nobis iste distinctio odio temporibus veniam a eos, nemo provident dicta tenetur minus ullam porro exercitationem.</p>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt dicta totam, cupiditate est laudantium adipisci? Inventore soluta eum, accusantium doloribus vel labore alias quae minima fugit eligendi, ducimus et.</p>
-            <button class="btn btn-primary btn-lg sub" onmouseup="this.blur()">Register</button>
         </div>
-    </section>
+    </section> -->
     <footer id="Sticky" class="py-2 bg-dark text-light">
         <div id="icons" class="container-fluid text-center">
             <span><a href="https://twitter.com/vitieee" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></span>
@@ -125,52 +168,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-    <script>
-        $(function(){
-            $('.carousel').carousel({
-                interval: 2000
-            })
-            $('.carousel').carousel('pause')
-            $('#android').click(function(){
-            if($('#detail_app').css('display')=='none')
-            {
-                $('#detail_app').css({"display":"block"});
-                $(window).scrollTop($('#detail_app').offset().top-20);
-                $('#detail_p5').css({"display":"none"});
-                $('#detail_uk').css({"display":"none"});
-                $('.carousel').carousel('pause');
-            }else{
-                $('#detail_app').css("display","none");
-                $('.carousel').carousel('cycle');
-            }
-        });
-            $('#p5').click(function(){
-                if($('#detail_p5').css('display')=='none')
-            {
-                $('#detail_p5').css({"display":"block"});
-                $(window).scrollTop($('#detail_p5').offset().top-20);
-                $('#detail_app').css({"display":"none"});
-                $('#detail_uk').css({"display":"none"});
-                $('.carousel').carousel('pause');
-            }else{
-                $('#detail_p5').css("display","none");
-                $('.carousel').carousel('cycle');
-            }
-        });
-            $('#uk').click(function(){
-                if($('#detail_uk').css("display")=='none')
-            {
-                $('#detail_uk').css({"display":"block"});
-                $(window).scrollTop($('#detail_uk').offset().top-20);
-                $('#detail_p5').css({"display":"none"});
-                $('#detail_app').css({"display":"none"});
-                $('.carousel').carousel('pause');
-            }else{
-                $('#detail_uk').css("display","none");
-                $('.carousel').carousel('cycle');
-            }
-        });
-    })
-    </script>
 </body>
 </html>
