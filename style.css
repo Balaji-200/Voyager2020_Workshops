@@ -9,6 +9,8 @@ header{
 }
 .carousel-inner{
   top: 81px;
+  background-attachment: fixed;
+  background:no-repeat center center scroll;
 }
 .carousel{
   width:100%;
@@ -38,15 +40,15 @@ header{
       transition: 0.3s;
       border: none;
   }
-.sub{
+/* .sub{
       border: 1.2px;
       border-style: solid;
         border-radius: 0%;
         background-color: inherit 0.8;
         border-color: transparent;
         transition: 0.5s;
-  }
-#regi_app.sub:hover{
+  } */
+/* #regi_app.sub:hover{
     color: black;
     border-color:#A7C63C;
     background-color:white;
@@ -59,8 +61,8 @@ header{
     box-shadow: 0 0 5px  #A7C63C,
                 0 0 10px #A7C63C,
                 0 0 25px #A7C63C;
-  }
-#regi_p5.sub:hover{
+  } */
+/* #regi_p5.sub:hover{
   color: black;
   border-color: #EB265E;
   background-color:white;
@@ -73,8 +75,8 @@ header{
   box-shadow: 0 0 5px  #EB265E,
               0 0 10px #EB265E,
               0 0 25px #EB265E;
-}
-#regi_uk.sub:hover{
+} */
+/* #regi_uk.sub:hover{
   color: black;
   border-color: #00979C;
   background-color:white;
@@ -86,7 +88,7 @@ header{
   box-shadow: 0 0 5px  #00979C,
               0 0 10px #00979C,
               0 0 25px #00979C;
-}
+} */
 
 #app-cap.display-4{
     color: #A7C63C;
@@ -123,14 +125,12 @@ a{
 .fa-facebook-f:hover{
     color: #3b5998;
 }
-#insta:hover{
-    color: white;
-    border-radius: 10px;
+.fa-instagram{
+  color: white;
+  border-radius: 6px;
+}
+.fa-instagram:hover{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    /* -webkit-background-clip: text; */
-            /* Also define standard property for compatibility */
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .fa-twitter:hover{
     color: #00acee;
