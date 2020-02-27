@@ -90,7 +90,7 @@ header{
               0 0 25px #00979C;
 } */
 
-#app-cap.display-4{
+/* #app-cap.display-4{
     color: #A7C63C;
     text-shadow: 0 0 5px black,
                  0 0 10px #A7C63C,
@@ -110,7 +110,7 @@ header{
                  0 0 10px #00979c,
                  0 0 20px #00979C,
                  0 0 5px white;
-}
+} */
 
 .carousel-item{
     height: 100vh;
@@ -141,7 +141,7 @@ a{
     margin-top: 20px;
     background-color: rgba(0,0,0,0.8);
   }
-  #det-app.card{
+  /* #det-app.card{
     box-shadow: 0 0 5px black,
     0 0 10px #A7C63C,
     0 0 20px #A7C63C,
@@ -158,7 +158,7 @@ a{
     0 0 10px #EB265E,
     0 0 20px #EB265E,
     0 0 40px #EB265E;
-  }
+  } */
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
